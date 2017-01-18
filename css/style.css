@@ -1,0 +1,35 @@
+body {
+  background: url(../images/road.jpg) center center no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  font-size: 30pt;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caption:after {
+  content:"\A";
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: #00bbeb;
+  display: inline-block;
+  margin: 0 0 -2px;
+}
