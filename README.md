@@ -65,6 +65,6 @@ To ensure that the images you load will actually be full page, you need to put t
 
  For the most optimal effect, ensure that all your images are of the same dimensions (e.g. 1920 x 1080).
 
- ## Image credits
+## Image credits
 
  https://unsplash.com
