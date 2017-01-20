@@ -4,15 +4,18 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="js/fullclip.js"></script>
 </head>
 <body>
   <section class="container">
+    <div class="fullBackground"></div>
     <h2 class="caption">The future is now</h2>
   </section>
-  <script src="js/fullclip.js"></script>
     <script>
-    $('body').fullClip({
-      image: 'images/mountain.jpg'
+    $('.fullBackground').fullClip({
+      images: ['images/house.jpg', 'images/road.jpg', 'images/winter.jpg'],
+      transitionTime: 2000,
+      wait: 5000
     });
     </script>
 </body>
