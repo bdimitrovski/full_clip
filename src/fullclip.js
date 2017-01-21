@@ -15,12 +15,14 @@
         new Image().src = settings.images[i];
     }
 
-    // sort out the transitions
+    // sort out the transitions + specify vendor prefixes
     $('.fullBackground')
       .css('background-image', 'url(' + settings.images[settings.current] + ')')
-      .css('transition-duration', + settings.transitionTime + 'ms')
-      .css('transition-timing-function', 'ease-in-out')
-      .css('background-blend-mode', 'darken');
+      .css('-webkit-transition', + settings.transitionTime + 's ease-in-out')
+      .css('-moz-transition', + settings.transitionTime + 'ms ease-in-out')
+      .css('-ms-transition', + settings.transitionTime + 'ms ease-in-out')
+      .css('-o-transition', + settings.transitionTime + 'ms ease-in-out')
+      .css('transition', + settings.transitionTime + 'ms ease-in-out')
 
     // if only one image, set as static background
     if (settings.static) {

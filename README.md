@@ -1,12 +1,22 @@
 # Full Clip - fullscreen body background image jQuery plugin
-This dead simple plugin does only one thing and it does it well - it creates a responsive full screen body background image by specifying the desired image whether it is a local or remote one. Also, it can create a beautiful background image slideshow by specifying an array of images.
+This simple plugin does only one thing and it does it well - it creates a responsive full screen body background image by specifying the desired image whether it is a local or remote one. Also, it can create a beautiful background image slideshow by specifying an array of images.
 
 ## Setup
 Make sure you load jQuery first. Then, just before the end of your ```<body>``` tag, first include the Full Clip plugin:
 
 ``` javascript
-<script src="js/fullclip.js"></script>
+<script src="src/fullclip.js"></script>
 ```
+
+In your markup, load a div which will contain a background, preferably inside a container, e.g:
+
+``` javascript
+<section class="container">
+  <div class="fullBackground"></div>
+  <h2 class="caption">The future is now</h2>
+</section>
+```
+where ```fullBackground``` is the element containing the images.
 
 ## Customized slideshow example
 
@@ -60,8 +70,6 @@ To ensure that the images you load will actually be full page, you need to put t
   height: 100%;
 }
  ```
-
- Name the class however you like and initialize it in the plugin call.
 
  For the most optimal effect, ensure that all your images are of the same dimensions (e.g. 1920 x 1080).
 
