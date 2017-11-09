@@ -18,11 +18,11 @@
     // sort out the transitions + specify vendor prefixes
     $('.fullBackground')
       .css('background-image', 'url(' + settings.images[settings.current] + ')')
-      .css('-webkit-transition', + settings.transitionTime + 's ease-in-out')
-      .css('-moz-transition', + settings.transitionTime + 'ms ease-in-out')
-      .css('-ms-transition', + settings.transitionTime + 'ms ease-in-out')
-      .css('-o-transition', + settings.transitionTime + 'ms ease-in-out')
-      .css('transition', + settings.transitionTime + 'ms ease-in-out')
+      .css('-webkit-transition', 'background ' + settings.transitionTime + 's ease-in-out')
+      .css('-moz-transition', 'background ' + settings.transitionTime + 'ms ease-in-out')
+      .css('-ms-transition', 'background ' + settings.transitionTime + 'ms ease-in-out')
+      .css('-o-transition', 'background ' + settings.transitionTime + 'ms ease-in-out')
+      .css('transition', 'background ' + settings.transitionTime + 'ms ease-in-out')
 
     // if only one image, set as static background
     if (settings.static) {
